@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Gili Lior"
   avatar           : "gili-bio.jpg"
-  bio              : "CS Ph.D. student, NLP and Computational Linguistics"
-  location         : "The Hebrew University of Jerusalem, Israel"
+  bio              : "Ph.D. student, NLP and Computational Linguistics at The Hebrew University of Jerusalem, Israel"
+  location         :
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=eAezvBwAAAAJ&hl=en"
