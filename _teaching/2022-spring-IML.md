@@ -2,9 +2,8 @@
 title: "TA - Introduction to Machine Learning"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2022-spring-IML
 venue: "The Hebrew University of Jerusalem, School of Computer Science and Engineering"
-date: 2022-03-01
+date: 2022-03-01, 2023-03-01
 location: "Jerusalem, Israel"
 ---
 

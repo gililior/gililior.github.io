@@ -2,7 +2,6 @@
 title: "TA - Introduction to Computer Science"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2020-fall-intro-to-cs
 venue: "The Hebrew University of Jerusalem, School of Computer Science and Engineering"
 date: 2020-10-01
 location: "Jerusalem, Israel"
