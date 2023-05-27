@@ -26,8 +26,8 @@ permalink: /publications/
            line-height: 1.2;
            font-family: sans-serif;
            font-weight: bold;
-           margin-top: 0;
            font-size: 1.563em;
+           color: dark-gray;
          }
         }
   </style>
