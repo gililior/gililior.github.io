@@ -2,8 +2,6 @@
 layout: single
 title: Publications
 permalink: /publications/
-header:
-  image: /assets/images/pano_4_crop.png
 ---
 
 <head>
