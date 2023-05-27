@@ -22,8 +22,14 @@ permalink: /publications/
            font-size: 22px;
          }
          h1 {
-           font-size: 24px;
+           margin: 2em 0 0.5em;
+           line-height: 1.2;
+           font-family: sans-serif;
+           font-weight: bold;
+           margin-top: 0;
+           font-size: 1.563em;
          }
+        }
   </style>
 
 </head>
