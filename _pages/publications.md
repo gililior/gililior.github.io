@@ -9,30 +9,6 @@ permalink: /publications/
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-        body {
-           font-size: 16px !important;
-           color: #2020131;
-           font-family: Nunito, sans-serif;
-         }
-         h3 {
-           font-size: 20px;                   
-         }
-         h2 {
-           font-size: 22px;
-         }
-         h1 {
-           margin: 2em 0 0.5em;
-           line-height: 1.2;
-           font-family: sans-serif;
-           font-weight: bold;
-           font-size: 1.563em;
-           color: dark-gray;
-         }
-        }
-  </style>
-
-</head>
 
 
 <div id="main">
