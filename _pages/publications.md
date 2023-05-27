@@ -5,7 +5,7 @@ permalink: /publications/
 ---
 
 
-```css
+<style> 
 
 .label {
   display: inline;
@@ -89,7 +89,7 @@ a.label:hover {
 .label-danger[href]:hover {
   background-color: #c9302c;
 }
-```
+</style>
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
