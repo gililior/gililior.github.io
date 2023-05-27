@@ -14,7 +14,7 @@ at [The Hebrew University of Jerusalem](https://new.huji.ac.il/),
 advised by [Dr. Gabriel Stanovsky](https://gabrielstanovsky.github.io/).
 In addition, I am a research intern in [AI2 Israel](https://allenai.org/ai2-israel).
 
-In my work I am interested in the intersection between human cognition and NLP, 
+In my work I am exploring aspects at the intersection of human cognition and natural language processing, 
 and how these two fields can mutually benefit and contribute to each other's advancements. 
 Moreover, I am exploring the use of unsupervised learning methods to enable cross-domain solutions for various tasks.
 
