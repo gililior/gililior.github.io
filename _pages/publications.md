@@ -159,6 +159,10 @@ a.label:hover {
       <a href="/assets/papers/{{ post.base }}/{{ post.slides }}" target="_blank"><span class="label label-danger">SLIDES</span></a>
       {% endunless %}
 
+      {% unless post.website == 'NONE' %}
+      <a href="/assets/papers/{{ post.base }}/{{ post.website }}" target="_blank"><span class="label label-success">WEBSITE</span></a>
+      {% endunless %}
+
       {% unless post.poster == 'NONE' %}
       <a href="/assets/papers/{{ post.base }}/{{ post.poster }}" target="_blank"><span class="label label-info">POSTER</span></a>
       {% endunless %}
