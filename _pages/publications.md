@@ -160,7 +160,7 @@ a.label:hover {
       {% endunless %}
 
       {% unless post.website == 'NONE' %}
-      <a href="{{ post.website }}" target="_blank"><span class="label label-success">WEBSITE</span></a> -->
+      <a href="{{ post.website }}" target="_blank"><span class="label label-success">WEBSITE</span></a>
       {% endunless %}
 
       {% unless post.poster == 'NONE' %}
