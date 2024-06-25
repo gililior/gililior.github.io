@@ -1,7 +1,7 @@
 ---
 title: "Computation or Weight Adaptation? Rethinking the Role of Plasticity in Learning"
 authors: <b>Gili Lior</b>*, Yuval Shalev*, Gabriel Stanovsky, Ariel Goldstein
-venue: Under review for Science
+venue: Under review
 bib: NONE
 bib-ext: NONE
 pdf: NONE
