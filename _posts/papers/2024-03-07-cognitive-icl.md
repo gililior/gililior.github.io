@@ -4,8 +4,8 @@ authors: <b>Gili Lior</b>*, Yuval Shalev*, Gabriel Stanovsky, Ariel Goldstein
 venue: Under review for PNAS
 bib: NONE
 bib-ext: NONE
-pdf: NONE
-pdf-ext: https://www.biorxiv.org/content/10.1101/2024.03.07.583890v1
+pdf: https://www.biorxiv.org/content/10.1101/2024.03.07.583890
+pdf-ext: https://www.biorxiv.org/content/10.1101/2024.03.07.583890
 talk: NONE
 data: NONE
 code: NONE
