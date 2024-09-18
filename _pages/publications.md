@@ -138,8 +138,7 @@ a.label:hover {
 <!--      <a href="/assets/papers/{{ post.base }}/{{ post.pdf }}" target="_blank"><span class="label label-success">PDF</span></a> -->
       {% endunless %}
 
-{% unless post.pdf-ext == 'NONE' %}
-<!--
+      {% unless post.pdf-ext == 'NONE' %}
       <a href="{{ post.pdf-ext }}" target="_blank"><span class="label label-success">PDF</span></a> -->
       {% endunless %}
 
