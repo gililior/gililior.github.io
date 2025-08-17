@@ -40,11 +40,11 @@ permalink: /publications/
     border-radius:12px;
     font-size:.75rem;
     padding:.28rem .6rem;
-    color:#fff !important; /* ensure contrast */
+    color:#fff !important;
     text-decoration:none;
   }
 
-  /* Base label palette (Bootstrap-like) */
+  /* Base label palette */
   .label-success{background:#5cb85c}
   .label-primary{background:#337ab7}
   .label-warning{background:#f0ad4e}
@@ -52,10 +52,10 @@ permalink: /publications/
   .label-info{background:#5bc0de}
   .label-default{background:#777}
 
-  /* Custom colors for distinct resources */
-  .label-data{background:#9b59b6}           /* DATA: purple */
-  .label-website{background:#3f51b5}        /* WEBSITE: indigo */
-  .label-poster{background:#009688}         /* POSTER: teal */
+  /* Custom colors */
+  .label-data{background:#9b59b6}      /* DATA: purple */
+  .label-website{background:#3f51b5}   /* WEBSITE: indigo */
+  .label-poster{background:#009688}    /* POSTER: teal */
 
   /* Hover states */
   .label-success:hover{background:#449d44}
@@ -77,9 +77,6 @@ permalink: /publications/
 </style>
 
 <div id="main">
-  {%- comment -%}
-    Sort posts (newest first), then group by year without using post.previous (avoids nil issues)
-  {%- endcomment -%}
   {% assign posts_sorted = site.posts | sort: "date" | reverse %}
   {% assign posts_by_year = posts_sorted | group_by_exp: "p", "p.date | date: '%Y'" %}
 
@@ -107,7 +104,7 @@ permalink: /publications/
           {% endif %}
 
           <div class="chips">
-            {# PDF(s) #}
+            {% comment %} PDF(s) {% endcomment %}
             {% if post.pdf and post.pdf != 'NONE' %}
               <a class="label-success" href="/assets/papers/{{ post.base }}/{{ post.pdf }}" target="_blank" rel="noopener">PDF</a>
             {% endif %}
@@ -115,12 +112,12 @@ permalink: /publications/
               <a class="label-success" href="{{ post['pdf-ext'] }}" target="_blank" rel="noopener">PDF</a>
             {% endif %}
 
-            {# DATA (distinct color) #}
+            {% comment %} DATA (distinct color) {% endcomment %}
             {% if post.data and post.data != 'NONE' %}
               <a class="label-data" href="{{ post.data }}" target="_blank" rel="noopener">{{ post['data-name'] | default: 'DATA' }}</a>
             {% endif %}
 
-            {# CODE / TALK / SLIDES / WEBSITE / POSTER / BIB #}
+            {% comment %} CODE / TALK / SLIDES / WEBSITE / POSTER / BIB {% endcomment %}
             {% if post.code and post.code != 'NONE' %}
               <a class="label-primary" href="{{ post.code }}" target="_blank" rel="noopener">CODE</a>
             {% endif %}
