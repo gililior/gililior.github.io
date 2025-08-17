@@ -11,6 +11,7 @@ permalink: /publications/
   .label-success{background:#5cb85c}.label-primary{background:#337ab7}
   .label-warning{background:#f0ad4e}.label-danger{background:#d9534f}
   .label-info{background:#5bc0de}.label-default{background:#777}
+  .label-data{background:#9b59b6}
   /* Small polish */
   .pubs{list-style:none;padding-left:0}
   .pub{margin:0 0 1.1rem}
@@ -41,7 +42,7 @@ permalink: /publications/
             <div class="pub-authors"><em>{{ post.authors }}</em></div>
           {% endif %}
 
-          {% if post.venue %}
+          {% if post.venue and post.venue != 'NONE' %}
             <div class="pub-venue">{{ post.venue }}</div>
           {% endif %}
 
@@ -53,7 +54,7 @@ permalink: /publications/
               <a class="label label-success" href="{{ post['pdf-ext'] }}" target="_blank">PDF</a>
             {% endif %}
             {% if post.data %}
-              <a class="label label-success" href="{{ post.data }}" target="_blank">{{ post['data-name'] | default: 'DATA' }}</a>
+              <a class="label label-data" href="{{ post.data }}" target="_blank">{{ post['data-name'] | default: 'DATA' }}</a>
             {% endif %}
             {% if post.code and post.code != 'NONE' %}
               <a class="label label-primary" href="{{ post.code }}" target="_blank">CODE</a>
