@@ -1,0 +1,103 @@
+/* -------- Pretty Hero -------- */
+:root{
+  --bg:#0f172a;           /* deep navy */
+  --bg2:#1e293b;          /* slate */
+  --text:#e5e7eb;         /* light gray */
+  --muted:#cbd5e1;
+  --brand:#60a5fa;        /* soft blue */
+  --brand-acc:#a78bfa;    /* violet accent */
+  --card:#0b1222;
+  --border:rgba(255,255,255,.12);
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#eef2ff; --bg2:#ffffff;
+    --text:#0f172a; --muted:#475569;
+    --brand:#2563eb; --brand-acc:#7c3aed;
+    --card:#ffffff; --border:rgba(2,6,23,.12);
+  }
+}
+
+.hero {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 2.2rem 1.3rem;
+  background:
+    radial-gradient(1200px 500px at 20% -10%, rgba(96,165,250,.20), transparent 60%),
+    radial-gradient(900px 480px at 100% 0%, rgba(167,139,250,.18), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+
+.hero-inner {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.hero-kicker {
+  display:inline-block;
+  font-size: .85rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: rgba(255,255,255,.06);
+  padding: .3rem .6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.hero h1 {
+  margin: .6rem 0 .35rem;
+  font-size: clamp(1.6rem, 4.2vw, 2.2rem);
+  line-height: 1.15;
+}
+
+.hero p.subtitle {
+  margin: .25rem 0 1rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.4vw, 1.1rem);
+}
+
+.cta {
+  display:flex;
+  gap:.6rem;
+  flex-wrap: wrap;
+}
+.btn-pretty {
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:.55rem .9rem;
+  border-radius: 12px;
+  text-decoration:none;
+  border:1px solid var(--border);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  transition: transform .08s ease, background .2s ease, border-color .2s ease;
+}
+.btn-pretty:hover { transform: translateY(-1px); border-color: rgba(255,255,255,.25); }
+.btn-primary {
+  background: linear-gradient(135deg, var(--brand), var(--brand-acc));
+  color:#fff !important;
+  border-color: transparent;
+}
+
+.hero-note {
+  margin-top: .9rem;
+  font-size: .92rem;
+  color: var(--muted);
+  border-top: 1px dashed var(--border);
+  padding-top: .7rem;
+}
+
+/* -------- Feature cards (Minimal Mistakes feature_row) -------- */
+.feature__item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px !important;
+  padding: 14px !important;
+}
+.feature__item h3 { margin-top: .2rem }
+.feature__item p { color: var(--muted) }
+.feature__item .btn { border-radius: 10px; }
