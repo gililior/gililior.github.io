@@ -1,7 +1,7 @@
 ---
 title: "Leveraging Collection-Wide Similarities for Unsupervised Document Structure Extraction"
 authors: <b>Gili Lior</b>, Yoav Goldberg, Gabriel Stanovsky
-venue: ACL 2024 findings
+venue: Findings of ACL 2024
 bib: NONE
 bib-ext: NONE
 pdf: NONE
