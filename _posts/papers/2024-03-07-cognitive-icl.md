@@ -8,7 +8,7 @@ pdf: NONE
 pdf-ext: https://www.biorxiv.org/content/10.1101/2024.03.07.583890
 talk: NONE
 data: NONE
-code: NONE
+code: https://colab.research.google.com/drive/1LLF_GxK9ZQ4yl6C7F3gnaZ7fQsATEImF?usp=sharing
 layout: post
 poster: NONE
 slides: NONE
