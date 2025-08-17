@@ -1,6 +1,6 @@
 ---
 title: "PromptSuite: A Task-Agnostic Framework for Multi-Prompt Generation"
-authors: Eliya Habba, Noam Dahan, <b>Gili Lior<\b>, Gabriel Stanovsky
+authors: Eliya Habba, Noam Dahan, <b>Gili Lior</b>, Gabriel Stanovsky
 venue: NONE
 bib: NONE
 bib-ext: NONE
