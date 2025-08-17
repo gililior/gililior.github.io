@@ -104,7 +104,8 @@
 
 
 /* About page: subtle readability improvements */
-.page__lead{font-size:1.05rem;color:#555}
-.page__content h3, .page__content h2{border-bottom:1px solid #eee;padding-bottom:.2rem}
-.page__content p{margin:0 0 .8rem}
-.about-badges .btn{margin-right:.4rem;margin-bottom:.4rem;border-radius:10px}
+.page__lead { font-size: 1.06rem; color:#555; }
+.about-meta { list-style:none; padding-left:0; margin: .2rem 0 .9rem; }
+.about-meta li { margin:.2rem 0; color:#555; }
+.about-actions .btn { border-radius:10px; margin:.35rem .35rem 0 0; }
+.page__content h3 { border-bottom:1px solid #eee; padding-bottom:.2rem; }
