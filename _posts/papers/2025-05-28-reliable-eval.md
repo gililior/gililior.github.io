@@ -5,7 +5,7 @@ venue: Findings of EMNLP 2025
 bib: NONE
 bib-ext: NONE
 pdf: NONE
-pdf-ext: https://arxiv.org/abs/2505.22169
+pdf-ext: https://aclanthology.org/2025.findings-emnlp.594
 talk: NONE
 data: NONE
 code: https://github.com/SLAB-NLP/Reliable-Eval

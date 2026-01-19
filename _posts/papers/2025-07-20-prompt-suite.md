@@ -5,7 +5,7 @@ venue: NONE
 bib: NONE
 bib-ext: NONE
 pdf: NONE
-pdf-ext: https://www.arxiv.org/abs/2507.14913
+pdf-ext: https://aclanthology.org/2025.emnlp-demos.19
 talk: NONE
 data: https://huggingface.co/datasets/nlphuji/PromptSuite
 code: https://github.com/eliyahabba/PromptSuite
