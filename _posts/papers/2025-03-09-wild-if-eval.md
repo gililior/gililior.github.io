@@ -1,7 +1,7 @@
 ---
 title: "WildIFEval: Instruction Following in the Wild"
 authors: <b>Gili Lior</b>, Asaf Yehudai, Ariel Gera, Liat Ein-Dor
-venue: NONE
+venue: GEM workshop @ ACL 2026
 bib: NONE
 bib-ext: NONE
 pdf: NONE
