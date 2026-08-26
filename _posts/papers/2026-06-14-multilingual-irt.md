@@ -1,7 +1,7 @@
 ---
 title: "Extending Item Response Theory for Efficient and Meaningful Multilingual Evaluation"
 authors: <b>Gili Lior</b>, Tzviel Frostig, Gabriel Stanovsky, Matan Eyal
-venue: NONE
+venue: Under Review
 bib: NONE
 bib-ext: NONE
 pdf: NONE
