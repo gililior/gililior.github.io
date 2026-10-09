@@ -1,5 +1,5 @@
 ---
-title: "Can LLM Agents Infer World Models? Evidence from Agentic Automata Learning"
+title: "Can Agents Infer Environment from Interaction? Evidence from Agentic Automata Learning"
 authors: Reef Menaged, <b>Gili Lior</b>, Shauli Ravfogel, Roee Aharoni, Gabriel Stanovsky
 venue: Under review for ICLR 2027
 bib: NONE
