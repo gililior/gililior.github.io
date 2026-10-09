@@ -2,7 +2,6 @@
 title: "Can Agents Infer Their Environment from Interaction?"
 collection: talks
 type: "Talk"
-permalink: /talks/2026-10-01-princeton-pli
 venue: "Princeton Language and Intelligence (PLI) Lunch Series"
 date: 2026-10-01
 location: "Princeton, NJ"
