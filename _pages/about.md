@@ -12,7 +12,7 @@ redirect_from:
 
 I am a Ph.D. candidate in Natural Language Processing (NLP)
 at [The Hebrew University of Jerusalem](https://new.huji.ac.il/), 
-advised by [Dr. Gabriel Stanovsky](https://gabrielstanovsky.github.io/).
+advised by [Prof. Gabriel Stanovsky](https://gabrielstanovsky.github.io/).
 I am currently a research intern at Google Research and previously interned at IBM Research and Allen Institute for AI (AI2).
 
 My research focuses on evaluating large language models (LLMs): what we can reliably conclude from an evaluation, and what it tells us about how models compare to humans.
