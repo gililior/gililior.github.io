@@ -10,7 +10,7 @@ redirect_from:
 
 
 I am a Ph.D. candidate in Natural Language Processing (NLP)
-at [The Hebrew University of Jerusalem](https://new.huji.ac.il/), 
+at The Hebrew University of Jerusalem, 
 advised by [Prof. Gabriel Stanovsky](https://gabrielstanovsky.github.io/).
 I am currently a research intern at Google Research and previously interned at IBM Research and Allen Institute for AI (AI2).
 

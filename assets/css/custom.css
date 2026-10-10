@@ -123,43 +123,136 @@
   .page { padding-right: 0; }
 }
 
-/* -------- Links: underline only on hover -------- */
-.page__content a, .archive a { text-decoration: none; }
-.page__content a:hover, .archive a:hover { text-decoration: underline; }
-
-/* -------- Cards on Talks and Teaching (same look as the Publications cards) -------- */
-.archive .pubs { list-style: none; padding-left: 0; margin: 1.5rem 0 0; }
-.archive .pub {
-  background: #fafafa;
-  padding: .9rem 1.05rem;
-  margin: 0 0 1.1rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,.08);
-}
-.archive .pub-title { font-size: 1.08rem; font-weight: 600; color: #222; line-height: 1.35; }
-.archive .pub-title a { color: #222; text-decoration: none; }
-.archive .pub-title a:hover { color: #007acc; text-decoration: underline; }
-.archive .pub-authors { font-size: .92rem; color: #666; margin-top: .2rem; }
-.archive .pub-venue { font-size: .9rem; color: #444; font-style: italic; margin-top: .15rem; }
-.archive .pub-desc { font-size: .92rem; color: #444; margin-top: .5rem; }
-.archive .pub-desc p { font-size: 1em; margin: 0; }
-
-@media (max-width: 600px) {
-  .archive .pub { padding: .85rem .9rem; }
-  .archive .pub-title { font-size: 1.02rem; }
+/* ==========================================================================
+   Peach and berry theme
+   ========================================================================== */
+:root {
+  --p-bg: #fff8f5; --p-card: #ffffff; --p-ink: #3a2030; --p-soft: #7c6068;
+  --p-accent: #d24d63; --p-wash: #ffe2d9; --p-wash2: #f6dcea; --p-line: #f5d6cd;
+  --p-serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --p-sans: "Figtree", "Avenir Next", "Segoe UI", sans-serif;
 }
 
-/* Sidebar inline icon (X logo) */
-.author__urls .icon-x { width: 1.25em; height: .9em; vertical-align: -.05em; fill: currentColor; }
+html {
+  min-height: 100%;
+  background:
+    radial-gradient(520px circle at 100% 0, var(--p-wash), transparent 70%),
+    radial-gradient(480px circle at 0 100%, var(--p-wash2), transparent 70%),
+    var(--p-bg);
+  background-attachment: fixed;
+}
+body { color: var(--p-ink); background: transparent; }
+body, input, button, .masthead__inner-wrap, .greedy-nav, .sidebar p, .sidebar li, .author__urls-wrapper { font-family: var(--p-sans); }
+h1, h2, h3, h4, h5, h6, .sidebar h3, .sidebar .author__name { font-family: var(--p-serif); font-weight: 600; color: var(--p-ink); }
+a { color: var(--p-accent); }
+a:hover { color: #a93a4e; }
 
-/* -------- Sidebar links: icons only, in a row (desktop). Labels stay for screen readers. -------- */
+/* Masthead */
+.masthead { border-bottom: 1px solid var(--p-line); }
+.greedy-nav { background: transparent; }
+.greedy-nav a { color: var(--p-soft); font-weight: 500; }
+.greedy-nav a:hover { color: var(--p-accent); }
+.greedy-nav .visible-links a:before { display: none; }
+.greedy-nav .masthead__menu-item--lg a { font-family: var(--p-serif); font-size: 1.25rem; font-weight: 600; color: var(--p-ink); }
+.greedy-nav .visible-links .is-active a { margin: 0 .45rem; padding: .3rem .85rem; border-radius: 999px; background: var(--p-wash); color: var(--p-accent); font-weight: 600; }
+.greedy-nav button { background-color: var(--p-accent); }
+.greedy-nav .hidden-links a:hover { color: var(--p-accent); background: var(--p-wash); }
+
+/* Sidebar */
+.author__avatar img { padding: 0; border: 0; box-shadow: 0 0 0 2px var(--p-card), 0 0 0 3px var(--p-wash); }
+.sidebar .author__name { font-size: 1.1rem; line-height: 1.15; }
+.author__bio { color: var(--p-soft); line-height: 1.45; }
+.author__bio b { color: var(--p-ink); font-weight: 600; }
+.btn--inverse { color: var(--p-accent) !important; border-color: var(--p-line) !important; background-color: var(--p-card); }
+.btn--inverse:hover { color: #fff !important; background-color: var(--p-accent); border-color: var(--p-accent) !important; }
+.author__urls a { color: var(--p-ink); }
+.author__urls i, .author__urls svg { color: var(--p-accent) !important; }
+
 @media (min-width: 57.8125em) {
-  .author__urls { display: flex; flex-wrap: nowrap; gap: .3rem; margin-top: .9rem; }
+  /* wider sidebar, as in the design */
+  .sidebar { width: 19%; }
+  .page, .archive { width: 79.3%; padding-left: 4%; }
+  .author__avatar img { max-width: 150px; box-shadow: 0 0 0 5px var(--p-card), 0 0 0 7px var(--p-wash), 0 10px 24px -10px var(--p-accent); margin: 7px; }
+  .sidebar .author__name { font-size: 1.55rem; margin-top: 16px; }
+  .author__bio { font-size: .8em; margin-bottom: 14px; }
+
+  /* links: a row of round icon buttons. Labels stay for screen readers. */
+  .author__urls { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .2rem; }
   .author__urls li { margin: 0; }
-  .author__urls a { display: block; margin: 0; padding: 0; font-size: 1.1rem; line-height: 1.4; text-decoration: none; }
-  .author__urls a:hover { opacity: .65; text-decoration: none; }
+  .author__urls a { display: grid; place-items: center; width: 32px; height: 32px; margin: 0; padding: 0; border-radius: 50%; background: var(--p-card); border: 1px solid var(--p-line); font-size: .82rem; line-height: 1; text-decoration: none; transition: background-color .15s ease, border-color .15s ease; }
+  .author__urls a:hover { background: var(--p-wash); border-color: var(--p-accent); text-decoration: none; }
   .author__urls .link-label {
     position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
     overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
   }
 }
+
+/* Page content */
+.page__title { font-size: 2rem; }
+.page__content p, .page__content li { line-height: 1.65; }
+.page__content a, .archive a { text-decoration: none; }
+.page__content a:hover, .archive a:hover { text-decoration: none; }
+.page__content p a, .pub-desc a { font-weight: 500; border-bottom: 1px solid var(--p-line); transition: border-color .15s ease; }
+.page__content p a:hover, .pub-desc a:hover { border-bottom-color: var(--p-accent); }
+
+/* Cards (publications, talks, teaching) */
+.pubs { list-style: none; padding-left: 0; margin: 0; }
+.archive .pubs { margin-top: 1.5rem; }
+.pub {
+  background: var(--p-card);
+  border: 1px solid var(--p-line);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+  margin: 0 0 1.1rem;
+  box-shadow: 0 8px 22px -18px var(--p-accent);
+}
+.pub-title { font-size: 1.02rem; font-weight: 700; color: var(--p-ink); line-height: 1.35; }
+.pub-title a { color: var(--p-ink); }
+.pub-title a:hover { color: var(--p-accent); }
+.pub-authors { font-size: .88rem; color: var(--p-soft); margin-top: .2rem; }
+.pub-authors em { font-style: normal; }
+.pub-authors b { color: var(--p-ink); font-weight: 600; }
+.pub-venue { font-family: var(--p-serif); font-style: italic; font-size: .95rem; color: var(--p-accent); margin-top: .1rem; font-variant-numeric: lining-nums; }
+.pub-desc { font-size: .92rem; margin-top: .5rem; }
+.pub-desc p { font-size: 1em; margin: 0; }
+.page__content .pub-year, .pub-year {
+  display: flex; align-items: center; gap: 14px;
+  margin: 2rem 0 .8rem; padding: 0; border: 0;
+  font-size: 1.35rem;
+}
+.pub-year::after { content: ""; flex: 1; height: 1px; background: var(--p-line); }
+
+.chips { margin-top: .3rem; }
+.chips a {
+  display: inline-block;
+  margin: .45rem .4rem 0 0;
+  padding: .12rem .78rem;
+  border-radius: 999px;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: filter .15s ease;
+}
+.chips a:hover { filter: brightness(.9); }
+.label-success { background: #d24d63; }  /* PDF: berry */
+.label-data    { background: #9a4b8f; }  /* DATA: plum */
+.label-primary { background: #cf6f2e; }  /* CODE: apricot */
+.label-website { background: #5a78a8; }  /* WEBSITE: dusty blue */
+.label-warning { background: #3f8f86; }  /* TALK: teal */
+.label-danger  { background: #b0577a; }  /* SLIDES: rose */
+.label-poster  { background: #7a6bb0; }  /* POSTER: violet */
+.label-default, .label-info { background: #8a7a80; }  /* BIB: taupe */
+
+@media (max-width: 600px) {
+  .pub { padding: .85rem .9rem; }
+}
+
+/* Footer */
+.page__footer { background-color: rgba(255, 255, 255, .55); border-top: 1px solid var(--p-line); color: var(--p-soft); }
+.page__footer footer p { font-family: var(--p-serif); font-style: italic; }
+
+/* Sidebar inline icon (X logo) */
+.author__urls .icon-x { width: 1.25em; height: .9em; vertical-align: -.05em; fill: currentColor; }
+
