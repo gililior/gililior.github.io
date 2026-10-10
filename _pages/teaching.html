@@ -5,8 +5,13 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<ul class="pubs">
+  {% for post in site.teaching reversed %}
+    <li class="pub">
+      <div class="pub-title">{{ post.title }}</div>
+      <div class="pub-authors">{{ post.type }}, {{ post.venue }}</div>
+      <div class="pub-venue">{% if post.years %}{{ post.years }}{% else %}{{ post.date | date: "%Y" }}{% endif %}</div>
+      <div class="pub-desc">{{ post.content | markdownify }}</div>
+    </li>
+  {% endfor %}
+</ul>

@@ -4,6 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 venue: "The Hebrew University of Jerusalem, School of Computer Science and Engineering"
 date: 2024-01-05
+years: "2021–2024"
 location: "Jerusalem, Israel"
 ---
 
