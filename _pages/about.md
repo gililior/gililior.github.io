@@ -20,4 +20,6 @@ Another line takes a cognitive perspective, comparing humans and LLMs on phenome
 Most recently, I have been studying LLM agents, asking whether they can [infer a model of their environment through interaction](https://arxiv.org/abs/2606.16576).
 I recently presented this work, together with the cognitive line, in a [talk at Princeton Language and Intelligence](https://pli.princeton.edu/events/2026/can-agents-infer-their-environment-interaction).
 
+I'm also passionate about human-agent collaboration: how it affects real lives, what users care about beyond success rate, and what LLMs can actually do versus what comes from the agent harness.
+
 I'm also a dogs lover, pop music fan, and a former [professional basketball player](https://www.fiba.basketball/en/players/167932-gili-lior).
