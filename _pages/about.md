@@ -18,8 +18,5 @@ My research focuses on evaluating large language models (LLMs): what we can reli
 One line of my work aims to make evaluation itself more trustworthy and efficient, by accounting for prompt sensitivity and stochasticity ([ReliableEval](https://aclanthology.org/2025.findings-emnlp.594), [PromptSuite](https://aclanthology.org/2025.emnlp-demos.19)) and by extending Item Response Theory to [multilingual evaluation](https://arxiv.org/abs/2606.15643).
 Another line takes a cognitive perspective, comparing humans and LLMs on phenomena such as the [framing effect](https://arxiv.org/abs/2502.17091) and [in-context learning](https://www.biorxiv.org/content/10.1101/2024.03.07.583890).
 Most recently, I have been studying LLM agents, asking whether they can [infer a model of their environment through interaction](https://arxiv.org/abs/2606.16576).
-I recently presented this work, together with the cognitive line, in a [talk at Princeton Language and Intelligence](https://pli.princeton.edu/events/2026/can-agents-infer-their-environment-interaction).
-
-I'm also passionate about human-agent collaboration: how it affects real lives, what users care about beyond success rate, and what LLMs can actually do versus what comes from the agent harness.
 
 I'm also a dogs lover, pop music fan, and a former [professional basketball player](https://www.fiba.basketball/en/players/167932-gili-lior).
