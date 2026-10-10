@@ -1,7 +1,8 @@
 ---
 permalink: /
 title: "About me"
-excerpt: "About me"
+excerpt: "Gili Lior is a Ph.D. candidate in NLP at the Hebrew University of Jerusalem, working on LLM evaluation, cognitive perspectives on LLMs, and LLM agents."
+seo_title: "Gili Lior - NLP Ph.D. Candidate at the Hebrew University of Jerusalem"
 author_profile: true
 redirect_from: 
   - /about/
