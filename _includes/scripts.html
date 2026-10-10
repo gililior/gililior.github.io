@@ -1,7 +1,7 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
 
 <script>
-  // Open links to other sites in a new tab
+  /* Open links to other sites in a new tab (no // comments here: the page HTML is minified onto one line) */
   document.querySelectorAll('a[href]').forEach(function (a) {
     if (/^https?:$/.test(a.protocol) && a.hostname !== location.hostname) {
       a.target = '_blank';
