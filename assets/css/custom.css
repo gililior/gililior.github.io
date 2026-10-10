@@ -127,64 +127,26 @@
 .page__content a, .archive a { text-decoration: none; }
 .page__content a:hover, .archive a:hover { text-decoration: underline; }
 
-/* -------- Cards (publications, talks, teaching) -------- */
-.pubs { list-style: none; padding-left: 0; margin: 0; }
-.pub {
+/* -------- Cards on Talks and Teaching (same look as the Publications cards) -------- */
+.archive .pubs { list-style: none; padding-left: 0; margin: 1.5rem 0 0; }
+.archive .pub {
   background: #fafafa;
   padding: .9rem 1.05rem;
   margin: 0 0 1.1rem;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,.08);
 }
-.pub-title { font-size: 1.08rem; font-weight: 600; color: #222; line-height: 1.35; }
-.pub-title a { color: #222; text-decoration: none; }
-.pub-title a:hover { color: #007acc; text-decoration: underline; }
-.pub-authors { font-size: .92rem; color: #666; margin-top: .2rem; }
-.pub-venue { font-size: .9rem; color: #444; font-style: italic; margin-top: .15rem; }
-.pub-desc { font-size: .92rem; color: #444; margin-top: .5rem; }
-.pub-desc p { font-size: 1em; margin: 0; }
-.pub-year {
-  margin: 2rem 0 .6rem;
-  font-size: 1.3rem;
-  border-bottom: 2px solid #eee;
-  padding-bottom: .25rem;
-}
-.archive .pubs { margin-top: 1.5rem; }
-
-/* Chips: one soft, matching palette (tinted background, darker text of the same hue) */
-.chips { margin-top: .35rem; }
-.chips a {
-  display: inline-block;
-  margin: .3rem .35rem 0 0;
-  padding: .2rem .62rem;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  font-size: .72rem;
-  font-weight: 600;
-  letter-spacing: .03em;
-  text-decoration: none !important;
-  transition: background-color .15s ease, border-color .15s ease;
-}
-.label-success { background: #e3f1ee; border-color: #c6e1db; color: #256b60 !important; } /* PDF: teal */
-.label-data    { background: #eee8f5; border-color: #dacdea; color: #65478a !important; } /* DATA: plum */
-.label-primary { background: #e4edf7; border-color: #c8d9ee; color: #2c5c8f !important; } /* CODE: blue */
-.label-website { background: #e8e9f6; border-color: #cfd1ec; color: #454d94 !important; } /* WEBSITE: indigo */
-.label-warning { background: #f7eede; border-color: #ecdcbd; color: #855d1b !important; } /* TALK: amber */
-.label-danger  { background: #f6e7e5; border-color: #ebcdc9; color: #96453d !important; } /* SLIDES: rose */
-.label-poster  { background: #e2f0f3; border-color: #c4e0e6; color: #296a78 !important; } /* POSTER: cyan */
-.label-default, .label-info { background: #eeeeee; border-color: #dcdcdc; color: #555 !important; } /* BIB: gray */
-.label-success:hover { background: #cfe7e1; }
-.label-data:hover    { background: #e0d5ee; }
-.label-primary:hover { background: #d0dff1; }
-.label-website:hover { background: #d6d8ef; }
-.label-warning:hover { background: #f0e1c4; }
-.label-danger:hover  { background: #efd5d1; }
-.label-poster:hover  { background: #cce5ea; }
-.label-default:hover, .label-info:hover { background: #e0e0e0; }
+.archive .pub-title { font-size: 1.08rem; font-weight: 600; color: #222; line-height: 1.35; }
+.archive .pub-title a { color: #222; text-decoration: none; }
+.archive .pub-title a:hover { color: #007acc; text-decoration: underline; }
+.archive .pub-authors { font-size: .92rem; color: #666; margin-top: .2rem; }
+.archive .pub-venue { font-size: .9rem; color: #444; font-style: italic; margin-top: .15rem; }
+.archive .pub-desc { font-size: .92rem; color: #444; margin-top: .5rem; }
+.archive .pub-desc p { font-size: 1em; margin: 0; }
 
 @media (max-width: 600px) {
-  .pub { padding: .85rem .9rem; }
-  .pub-title { font-size: 1.02rem; }
+  .archive .pub { padding: .85rem .9rem; }
+  .archive .pub-title { font-size: 1.02rem; }
 }
 
 /* Sidebar inline icon (X logo) */
