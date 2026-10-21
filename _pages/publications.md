@@ -50,7 +50,7 @@ permalink: /publications/
               <a class="label-primary" href="{{ post.code }}" target="_blank" rel="noopener">CODE</a>
             {% endif %}
             {% if post.talk and post.talk != 'NONE' %}
-              <a class="label-warning" href="{{ post.talk }}" target="_blank" rel="noopener">TALK</a>
+              <a class="label-warning" href="{{ post.talk }}" target="_blank" rel="noopener">{{ post['talk-name'] | default: 'TALK' }}</a>
             {% endif %}
             {% if post.slides and post.slides != 'NONE' %}
               <a class="label-danger" href="/assets/papers/{{ post.base }}/{{ post.slides }}" target="_blank" rel="noopener">SLIDES</a>
