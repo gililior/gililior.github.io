@@ -13,5 +13,5 @@ layout: post
 poster: NONE
 slides: NONE
 website: https://reefmenaged.github.io/Agentic_Automata_Learning/
-date: 15-06-2026
+date: 31-10-2026
 ---
